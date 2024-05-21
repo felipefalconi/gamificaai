@@ -457,9 +457,13 @@ footer .container-grid {
     color: var(--laranja-gamifica);
 }
 
+.menu-fechado {
+    display: none;
+}
+
 @media screen and (max-width: 1300px) {
     header {
-        position: relative;
+        position: relative; 
     }
 
     header button {
@@ -540,11 +544,19 @@ footer .container-grid {
         align-items: center;
     }
 
+    .icones a {
+        font-size: 10px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
     .card {
         flex-basis: 45%;
+    }
+
+    .icones a {
+        font-size: 11px;
     }
 }
 
