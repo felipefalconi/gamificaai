@@ -1,20 +1,64 @@
 {
-    "cases": [
-        {
-         "imagem": "https://unsplash.it/600/400?image=14",
-            "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
-        },
-        {
-         "imagem": "https://unsplash.it/600/400?image=40",
-            "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu programa de treinamento."
-        },
-        {
-         "imagem": "https://unsplash.it/600/400?image=200",
-            "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking"
-        },
-        {
-         "imagem": "https://unsplash.it/600/400?image=473",
-            "descricao": "Uma empresa de saúde promove o bem-estar dos funcionários através de um desafio de gamificação de condicionamento físico"
-        }
-    ]
+  "cases": [
+    {
+      "imagem": "https://unsplash.it/600/400?image=14",
+      "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=40",
+      "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu programa de treinamento."
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=200",
+      "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=473",
+      "descricao": "Uma empresa de saúde promove o bem-estar dos funcionários através de um desafio de gamificação de condicionamento físico"
+    }
+  ],
+  "solicitacoes": [
+    {
+      "id": "6b0c",
+      "nome": "felipe",
+      "email": "falconi@email.com",
+      "descricao": "Falta de produtividade"
+    },
+    {
+      "id": "1165",
+      "nome": "felipe",
+      "email": "falconi@gmail.com",
+      "descricao": "problema no computador"
+    },
+    {
+      "id": "be47",
+      "nome": "felipe",
+      "email": "falconi@gmail.com",
+      "descricao": "funcionarios desmotivados"
+    },
+    {
+      "id": "5b61",
+      "nome": "sakhlfkaslkf",
+      "email": "sojdakjfk@gmail.com",
+      "descricao": "damskfmaskfm"
+    },
+    {
+      "id": "0933",
+      "nome": "wsgldslsfnj",
+      "email": "uifudsuivs@gmail.com",
+      "descricao": "okskfwlmkdsavalmk"
+    },
+    {
+      "id": "9bf2",
+      "nome": "2r3çmkm",
+      "email": "dfnsjfjksn@gmail.comfkj",
+      "descricao": "oisnalfnjlasjf"
+    },
+    {
+      "id": "798b",
+      "nome": "Felipe",
+      "email": "felipe@email.com",
+      "descricao": "miiiiieóe"
+    }
+  ]
 }

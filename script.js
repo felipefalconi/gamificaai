@@ -110,7 +110,7 @@ function selecionarSlide(indiceSlide) {
 
 ///Carregamento dinamico dos cases 
 let listaCases = [
-   
+
 ]
 
 function renderizarCases() {
@@ -125,7 +125,7 @@ function renderizarCases() {
         //Montar o html do card, passando os atributos do case
         template += ` <div class="card">
         <img src=${cardCase.imagem} alt="">
-        <p>${ cardCase.descricao}</p>
+        <p>${cardCase.descricao}</p>
         <button>Ver Mais</button>
     </div>`
 
@@ -135,4 +135,63 @@ function renderizarCases() {
 
     // Inserir html dos cases montados no elemento container-cards
     containerCards.innerHTML = template
+}
+
+function carregarCases() {
+    /// Metodo HTTP GET - Read/Leitura - Serve para mostrar um item ou uma lista de itens
+    fetch("http://localhost:3000/cases")
+        .then((resposta) => resposta.json())
+        .then((dadosTratados) => {
+            console.log(dadosTratados)
+            listaCases = dadosTratados
+            renderizarCases()
+        })
+}
+
+function solicitarOrcamento(event) {
+    ///Pegar os valores dos inputs
+       let valorNome = document.getElementById("campo-nome").value
+       let valorEmail = document.getElementById("campo-email").value
+       let valorDescricao = document.getElementById("campo-texto").value
+
+
+    ///Organizar os valores em um objeto
+    let dadosForm = {
+        nome: valorNome,
+        email: valorEmail,
+        descricao: valorDescricao
+    }
+
+    console.log(dadosForm);
+    ///Enviar a requisicao para a API
+    /// metodo HTTP POST - Create/Criar -> Cadastrar um novo registro (solicitacao)
+    fetch("http://localhost:3000/solicitacoes", {
+        method: "POST", 
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dadosForm)
+    })
+
+    // CASO SUCESSO
+    .then(resposta => {
+        console.log(resposta);
+
+
+         ///Limpar os inputs
+        document.querySelector("#contato form").reset()
+
+
+         ///Mostrar um alert de sucesso
+        alert("Solicitação enviado com sucesso!!! 👌")
+
+    })
+    /// CASO ERRO
+       .catch(erro => {
+        console.log(erro);
+        /// Mostrar alert com mensagem de erro
+        alert("Erro na requisição😓")
+       })
+
+       event.preventDefault()
 }
